@@ -10,10 +10,22 @@
         <div id="password">
           <label id="passwordLabel">Password: </label>
           <textarea></textarea>
-          <button>Sign in</button>
+          <button v-on:click="handleClickSignin">Sign in</button>
         </div>
       </div>
-  </template>
+</template>
+
+<script>
+export default {
+  name: 'LoginComponent',
+  methods: {
+    handleClickSignin: () => {
+      alert("You clicked Sign in button!");
+    }
+  }
+};
+</script>
+
 
 
  <style scoped>
