@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import MyRootComponent from './components/MyRootComponent.vue'
 
-createApp(App).mount('#app')
+createApp(MyRootComponent).mount('#app')
