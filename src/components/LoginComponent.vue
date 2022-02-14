@@ -5,11 +5,11 @@
         </div>
         <div id="username">
           <label id="usernameLabel">Username:</label>
-          <textarea></textarea>
+          <textarea v-model="username"></textarea>
         </div>
         <div id="password">
           <label id="passwordLabel">Password: </label>
-          <textarea></textarea>
+          <textarea v-model="password"></textarea>
           <button v-on:click="handleClickSignin">Sign in</button>
         </div>
       </div>
@@ -19,12 +19,20 @@
 export default {
   name: 'LoginComponent',
   methods: {
-    handleClickSignin: () => {
-      alert("You clicked Sign in button!");
+    handleClickSignin (){
+      alert("You entered, username: " + this.username);
+    }
+  },
+  data() {
+    return {
+      username: '',
+      password: '',
     }
   }
-};
+
+}
 </script>
+
 
 
 
